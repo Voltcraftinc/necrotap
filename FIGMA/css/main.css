@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v1_2 {
+  width: 100%;
+  height: 1920px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  background: url("assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.trinkets_icon {
+  width: 189px;
+  height: 187px;
+  background: url("assets/trinkets_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1688px;
+  left: 164px;
+  overflow: hidden;
+}
+.tap_icon {
+  width: 189px;
+  height: 187px;
+  background: url("assets/tap_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1688px;
+  left: 33px;
+  overflow: hidden;
+}
+.phants_icon {
+  width: 189px;
+  height: 187px;
+  background: url("assets/phants_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1688px;
+  left: 51px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+.necrotap_logo {
+  width: 784px;
+  height: 377px;
+  background: url("assets/necrotap_logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 11px;
+  left: 148px;
+  overflow: hidden;
+}
+.v4_11 {
+  width: 1px;
+  height: 1px;
+  background: url("assets/.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 189px;
+  left: 123px;
+  overflow: hidden;
+}
+.hp_bar {
+  width: 661px;
+  height: 282px;
+  background: url("assets/hp_bar.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1397px;
+  left: 202px;
+  overflow: hidden;
+}
+.haunts_icon {
+  width: 189px;
+  height: 187px;
+  background: url("assets/haunts_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1688px;
+  left: 427px;
+  overflow: hidden;
+}
+.earn_icon {
+  width: 189px;
+  height: 187px;
+  background: url("assets/earn_icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1688px;
+  left: 230px;
+  overflow: hidden;
+}
+.mutabytes_earn {
+  width: 453px;
+  height: 161px;
+  background: url("assets/mutabytes_earn.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 350px;
+  left: 46px;
+  overflow: hidden;
+}
+.mutabytes_per_hour {
+  width: 496px;
+  height: 139px;
+  background: url("assets/mutabytes_per_hour.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 350px;
+  left: 133px;
+  overflow: hidden;
+}
+.v14_8 {
+  width: 315px;
+  height: 139px;
+  background: url("assets/.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 492px;
+  left: 314px;
+  overflow: hidden;
+}
+.v14_9 {
+  width: 458px;
+  height: 159px;
+  background: url("assets/.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 516px;
+  left: 46px;
+  overflow: hidden;
+}
