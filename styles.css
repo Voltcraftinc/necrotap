@@ -10,13 +10,19 @@ html, body {
     overflow: hidden; /* Prevent scrollbars */
 }
 
+/* Responsive Font Size */
+@font-face {
+    font-family: 'TheMacabre';
+    src: url('assets/TheMacabre.otf') format('opentype');
+}
+
 body {
+    font-family: 'TheMacabre', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
-    font-family: 'TheMacabre', sans-serif;
     margin: 0;
 }
 
@@ -94,13 +100,11 @@ body {
     border-radius: 10px;
 }
 
-/* Mutabytes Image */
 .mutabytes-earn-container img {
     width: 100%; /* This makes the image fill the container */
     height: auto; /* Keeps the aspect ratio */
 }
 
-/* Mutabytes Text */
 .mutabytes-text {
     font-size: 32px;
     padding: 10px;
@@ -120,13 +124,11 @@ body {
     border-radius: 10px;
 }
 
-/* Wraithium Image */
 .wraithium-earn-container img {
     width: 100%; /* Makes the image fill the container */
     height: auto; /* Keeps the aspect ratio */
 }
 
-/* Wraithium Text */
 .wraithium-text {
     font-size: 32px;
     padding: 10px;
@@ -135,7 +137,6 @@ body {
     top: 22px; /* Adjust text position inside the bar */
     right: 20px; /* Align to the right */
 }
-
 
 /* Mutabytes Per Hour Container */
 .mutabytes-per-hour-container {
@@ -146,13 +147,11 @@ body {
     top: 36%;
 }
 
-/* Mutabytes Per Hour Image */
 .mutabytes-per-hour-container img {
     width: 100%; /* Makes the image fill the container */
     height: auto; /* Keeps the aspect ratio */
 }
 
-/* Mutabytes Per Hour Text */
 .mutabytes-per-hour-text {
     font-size: 32px;
     padding: 10px;
@@ -171,13 +170,11 @@ body {
     top: 40.5%;
 }
 
-/* Mutabytes Per Tap Image */
 .mutabytes-per-tap-container img {
     width: 100%; /* Makes the image fill the container */
     height: auto; /* Keeps the aspect ratio */
 }
 
-/* Mutabytes Per Tap Text */
 .mutabytes-per-tap-text {
     font-size: 32px;
     padding: 10px;
@@ -186,7 +183,6 @@ body {
     top: 25px; /* Adjust text position inside the bar */
     left: 160px; /* Align to the right */
 }
-
 
 /* Icons */
 .icons-container {
@@ -262,4 +258,60 @@ body {
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 1080px) {
+    /* Scale down the fixed container */
+    .fixed-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Make the central orb smaller on mobile */
+    .central-orb-container {
+        width: 70%;
+        height: auto;
+    }
+
+    /* Adjust the positioning of the HP bar */
+    .hp-bar {
+        width: 80%;
+    }
+
+    .hp-text {
+        font-size: 60px;
+    }
+
+    /* Resize icons for mobile */
+    .icons-container {
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .icon {
+        width: 120px;
+        height: auto;
+    }
+
+    /* Adjust text size for better readability on smaller screens */
+    .mutabytes-text, .wraithium-text, .mutabytes-per-hour-text, .mutabytes-per-tap-text {
+        font-size: 24px;
+    }
+
+    .popup-content {
+        width: 90vw;
+        max-width: 300px;
+    }
+
+    /* Adjust font sizes in the login modal */
+    .login-modal-content {
+        width: 80vw;
+        max-width: 350px;
+    }
+
+    #login-button {
+        font-size: 1.2rem;
+    }
 }
