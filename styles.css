@@ -5,252 +5,203 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
 body {
-    font-family: 'TheMacabre', sans-serif;
-    text-align: center;
-    background-color: black;
-    color: white;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    background-color: black;
+    color: white;
+    font-family: 'TheMacabre', sans-serif;
+    margin: 0;
+}
+
+/* Lock the container to 1080x1920 */
+.fixed-container {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    background-color: black;
+    overflow: hidden; /* Prevent any overflow */
 }
 
 /* Background */
 .background-container, .background {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    overflow: hidden;
 }
 
-.logo-container, .necrotap_logo {
-    width: 784px;
-    height: 377px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 1;
+/* Logo */
+.logo-container {
     position: absolute;
-    top: 11px;
-    left: 48%;
+    top: 15%;
+    left: 28%;
     transform: translateX(-50%);
+    width: 430px;
+    height: auto;
 }
-
 
 /* Central Orb */
 .central-orb-container {
-    position: fixed;
-    top: 500px; /* Adjust as needed */
-    left: 50%; /* Move to the center horizontally */
-    transform: translateX(-50%); /* Offset by 50% of its own width to center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: auto;
 }
 
 #central-orb {
-    width: 500px;
-    height: 500px;
-}
-
-
-/* General bar styling */
-.bar {
-    width: 300px;
-    height: 100px; /* Adjust the height as needed */
-    margin: 10px 0;
-    background-color: #33333300; /* Placeholder background color */
-    border-radius: 10px;
-    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 /* HP Bar */
-.hp-bar, .hp_bar {
-    width: 661px; /* Original width */
-    height: 282px; /* Original height */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
+.hp-bar {
     position: absolute;
-    top: 1000px; /* Adjust as needed */
+    top: 60%;
     left: 50%;
-    transform: translateX(-50%) scale(1.9); /* Scale to 120% of the original size */
-    overflow: hidden;
+    transform: translateX(-50%);
+    width: 661px;
+    height: auto;
 }
-
 
 .hp-text {
     position: absolute;
-    top: 47px; /* Adjust text position as needed */
-    left: 55%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: #fff;
+    top: 58%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
 }
 
 /* Mutabytes Earn Container */
 .mutabytes-earn-container {
-    position: fixed;
-    top: -850px; /* Moved closer to the top */
-    left: -300px;
-    width: 300px;
-    height: 20px;
-    margin: 10px;
+    position: absolute;
+    top: 36%;
+    left: 30px;
+    width: 270px;
+    height: auto;
     border-radius: 10px;
-    position: relative;
+}
+
+/* Mutabytes Image */
+.mutabytes-earn-container img {
+    width: 100%; /* This makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+/* Mutabytes Text */
+.mutabytes-text {
+    font-size: 32px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 22px; /* Adjust text position inside the bar */
+    right: 20px; /* Align to the right */
 }
 
 /* Wraithium Earn Container */
 .wraithium-earn-container {
-    position: fixed;
-    top: -790px; /* Moved closer to the top */
-    left: -300px;
-    width: 300px;
-    height: 20px;
-    margin: 10px;
+    position: absolute;
+    top: 42%;
+    left: 30px;
+    width: 270px;
+    height: auto;
     border-radius: 10px;
-    position: relative;
 }
+
+/* Wraithium Image */
+.wraithium-earn-container img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+/* Wraithium Text */
+.wraithium-text {
+    font-size: 32px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 22px; /* Adjust text position inside the bar */
+    right: 20px; /* Align to the right */
+}
+
 
 /* Mutabytes Per Hour Container */
 .mutabytes-per-hour-container {
     position: absolute;
-    top: 500px; /* Moved closer to the top */
-    right: 700px;
-    width: 496px;
-    height: 139px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    overflow: hidden;
+    right: 30px;
+    width: 300px;
+    height: auto;
+    top: 36%;
+}
+
+/* Mutabytes Per Hour Image */
+.mutabytes-per-hour-container img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+/* Mutabytes Per Hour Text */
+.mutabytes-per-hour-text {
+    font-size: 32px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top: 25px; /* Adjust text position inside the bar */
+    left: 255px; /* Align to the right */
 }
 
 /* Mutabytes Per Tap Container */
 .mutabytes-per-tap-container {
     position: absolute;
-    top: 400px; /* Moved closer to the top */
-    right: 800px;
-    width: 315px;
-    height: 139px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    overflow: hidden;
+    right: 30px;
+    width: 200px;
+    height: auto;
+    top: 40.5%;
 }
 
-/* Mutabytes Earn Text */
-.mutabytes-text {
-    position: absolute;
-    top: 40px;
-    left: 40%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: #fff;
-}
-
-/* Wraithium Earn Text */
-.wraithium-text {
-    position: absolute;
-    top: 40px;
-    left: 40%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: #fff;
-}
-
-/* Mutabytes Per Hour Text */
-.mutabytes-per-hour-text {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: #fff;
+/* Mutabytes Per Tap Image */
+.mutabytes-per-tap-container img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Keeps the aspect ratio */
 }
 
 /* Mutabytes Per Tap Text */
 .mutabytes-per-tap-text {
+    font-size: 32px;
+    padding: 10px;
+    color: white;
     position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: #fff;
+    top: 25px; /* Adjust text position inside the bar */
+    left: 160px; /* Align to the right */
 }
 
 
-/* Icons - separated and sized individually */
+/* Icons */
 .icons-container {
     position: absolute;
-    bottom: 100px;
+    bottom: 16%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
-    width: 90%;
+    gap: 10px;
 }
 
 .icon {
     width: 150px;
-    height: 150px;
+    height: auto;
     cursor: pointer;
-}
-
-.tap_icon {
-    width: 189px;
-    height: 187px;
-    background: url("assets/tap_icon.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: fixed; /* Fixed position will stay in the same place when scrolling */
-    top: calc(1688px); /* Using calc to ensure correct positioning */
-    left: 33px;
-    z-index: 10; /* Ensure it stays on top of other elements */
-    overflow: hidden;
-}
-
-
-.trinkets_icon {
-    width: 189px;
-    height: 187px;
-    background: url("assets/trinkets_icon.png");
-    position: absolute;
-    top: 1688px;
-    left: 164px;
-}
-
-.phants_icon {
-    width: 189px;
-    height: 187px;
-
-    position: absolute;
-    top: 1688px;
-    left: 51px;
-}
-
-.haunts_icon {
-    width: 189px;
-    height: 187px;
-    background: url("assets/haunts_icon.png");
-    position: absolute;
-    top: 1688px;
-    left: 427px;
-}
-
-.earn_icon {
-    width: 189px;
-    height: 187px;
-
-    position: absolute;
-    top: 1688px;
-    left: 230px;
 }
 
 /* Popup Overlay */
@@ -271,8 +222,9 @@ body {
     color: black;
     padding: 20px;
     border-radius: 10px;
-    width: 300px; /* Adjust width as needed */
-    position: relative; /* Added for positioning close button */
+    width: 80vw;
+    max-width: 300px;
+    position: relative;
 }
 
 .close-popup {
@@ -299,13 +251,15 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
+    width: 80vw;
+    max-width: 400px;
 }
 
 #login-button {
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.5rem;
 }
